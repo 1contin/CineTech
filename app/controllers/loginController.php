@@ -41,7 +41,7 @@ class LoginController
             session_start();
         }
         session_destroy();
-        header("Location: /cineTech/app/views/admin/dashboard.php");
+        header("Location: /cineTech/app/views/pages/home.php");
         exit;
     }
 

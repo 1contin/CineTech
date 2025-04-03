@@ -6,6 +6,7 @@ require_once __DIR__ . "../../../models/genero.php";
 $database = new Database();
 $pdo = $database->conectar();
 $generoModel = new Genero($pdo);
+
 ?>
 
 <!DOCTYPE html>

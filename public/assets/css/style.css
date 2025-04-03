@@ -78,14 +78,16 @@ header nav a {
     background-color: #6c757d;
 }
 
+.card-home  {
+    width: 18.75 rem; 
+    height: 28.125rem;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 .card {
     border: none;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin: 0 auto;
-}
-.card-home {
-    width: 18.75 rem; 
-    height: 28.125rem; 
 }
 .mt-4 {
     padding: 16px;
@@ -95,7 +97,7 @@ header nav a {
 .card-img-top-home{
     width: 28.125rem;
     height: 18.75rem;
-    max-width: 100%; /* Garante que a imagem não exceda a largura do card */
+    max-width: 100%;
     object-fit: cover;
 }
 .filme-card {

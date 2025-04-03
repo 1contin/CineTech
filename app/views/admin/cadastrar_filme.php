@@ -7,6 +7,7 @@ $database = new Database();
 $pdo = $database->conectar();
 $generoModel = new Genero($pdo);
 $generos = $generoModel->read();
+
 ?>
 
 <!DOCTYPE html>

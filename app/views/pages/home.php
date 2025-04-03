@@ -67,11 +67,12 @@ if (isset($_GET['search'])) {
         <div class="row" id="searchResults">
             <?php foreach ($filmes as $filme) : ?>
                 <div class="col-12 col-md-3 mb-4">
-                    <div class="card-home">
+                    <div class="card">
                         <img src="<?= $filme['capa'] ?>" class="card-img-top-home" alt="<?= $filme['titulo'] ?>">
                         <div class="card-body">
                             <h5 class="card-title"><?= $filme['titulo'] ?></h5>
                             <p class="card-text"><strong>Gênero:</strong> <?= $filme['genero'] ?></p>
+                            <p class="card-text"><strong>Data de lançamento:</strong> <?= $filme['data_lancamento'] ?></p>
                             <a href="detalhes.php?id=<?= $filme['id'] ?>" class="btn btn-primary">Ver Detalhes</a>
                         </div>
                     </div>
