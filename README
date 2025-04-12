@@ -1,0 +1,67 @@
+# CineTech - Catálogo de Filmes
+
+CineTech é uma aplicação web desenvolvida para gerenciar um catálogo de filmes. O projeto permite aos usuários visualizar os filmes disponíveis publicamente e oferece um painel administrativo para gerenciar os filmes e gêneros cadastrados. A aplicação foi construída com uma separação clara entre frontend e backend.
+
+![Catálogo Público](https://imgur.com/a/IrZpUrE)
+![Dashboard Admin](https://imgur.com/KMBygiD)
+
+* **Frontend Público:**
+    * Listagem de filmes cadastrados com capa, título, gênero e data.
+    * Barra de busca para encontrar filmes.
+    * Filtros para visualizar filmes por gênero.
+    * Visualização de detalhes do filme (implícito).
+* **Painel Administrativo:**
+    * Dashboard com resumo de filmes e gêneros.
+    * Gerenciamento completo de Filmes (CRUD - Adicionar, Visualizar, Editar, Excluir).
+    * Upload de imagem da capa do filme.
+    * Gerenciamento de Gêneros (Adicionar, Excluir).
+
+# Tecnologias Utilizadas
+
+* **Backend:**
+    * PHP (Orientado a Objetos)
+    * Estrutura MVC (Model-View-Controller)
+    * API RESTful para comunicação com o frontend
+    * PDO para interação com banco de dados
+* **Frontend:**
+    * HTML5
+    * CSS3
+    * JavaScript (Vanilla JS com `Workspace` API)
+    * Bootstrap 5
+    * Bootstrap Icons
+* **Banco de Dados:**
+    * MySQL (gerenciado via XAMPP)
+* **Servidor:**
+    * Apache (via XAMPP)
+
+# Pré-requisitos
+
+Antes de começar, você precisará ter instalado em sua máquina:
+* [XAMPP](https://www.apachefriends.org/pt_br/index.html) (que inclui Apache, MySQL, PHP) ou um ambiente similar (WAMP, MAMP, LAMP).
+* Um navegador web moderno (Chrome, Firefox, Edge, etc.).
+* [Git](https://git-scm.com/) (opcional, para clonar o repositório).
+
+# Instalação e Configuração
+
+1.  **Clone o repositório** (ou baixe e extraia o .zip):
+    ```bash
+    git clone <URL_DO_SEU_REPOSITORIO>
+    # ou copie os arquivos manualmente
+    ```
+2.  **Mova a pasta do projeto** para o diretório raiz do seu servidor web Apache. No XAMPP, geralmente é o `htdocs`.
+    * Exemplo: `C:/xampp/htdocs/CineTech2.0/` *(Ajuste o nome da pasta se for diferente)*
+3.  **Inicie os módulos Apache e MySQL** no painel de controle do XAMPP.
+4.  **Crie o Banco de Dados:**
+    * Acesse o phpMyAdmin: `http://localhost/phpmyadmin`
+    * Crie um novo banco de dados. Sugestão de nome: `cinetech_db` *(Confirme se este é o nome correto ou ajuste)*.
+    * **Importante:** Você precisa criar as tabelas (`filmes`, `generos`, etc.). No arquivo contem a pasta SQL com o script.sql, importe-o para o banco de dados recém-criado. Caso contrário, você precisará criá-las manualmente com base no seu código Model.
+5.  **Configure a Conexão com o Banco de Dados:**
+    * Verifique o arquivo de configuração do backend: `backend/app/config/database.php` *(Confirme se este é o caminho correto)*.
+    * Ajuste as credenciais (`host`, `db_name`, `username`, `password`) de acordo com a sua configuração do MySQL e o nome do banco de dados criado no passo anterior. O usuário padrão do XAMPP geralmente é `root` sem senha.
+
+# Como Executar
+
+1.  Certifique-se de que o **Apache** e o **MySQL** estão em execução no XAMPP.
+2.  Abra seu navegador e acesse as URLs correspondentes (ajuste o nome da pasta se necessário):
+    * **Página Inicial (Catálogo):** `http://localhost/CineTech2.0/frontend/public/pages/home.html`
+    * **Dashboard Administrativo:** `http://localhost/CineTech2.0/frontend/admin/dashboard.html`
