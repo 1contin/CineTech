@@ -45,7 +45,7 @@ Antes de começar, você precisará ter instalado em sua máquina:
 
 1.  **Clone o repositório** (ou baixe e extraia o .zip):
     ```bash
-    git clone <URL_DO_SEU_REPOSITORIO>
+    git clone https://github.com/1contin/CineTech
     # ou copie os arquivos manualmente
     ```
 2.  **Mova a pasta do projeto** para o diretório raiz do seu servidor web Apache. No XAMPP, geralmente é o `htdocs`.
